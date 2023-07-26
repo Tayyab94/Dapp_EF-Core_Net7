@@ -1,0 +1,13 @@
+﻿namespace LearnDapper.Interfaces
+{
+    public interface IUnitOfWork : IDisposable
+    {
+
+
+        Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
+        public void Dispose()
+        {
+            throw new NotImplementedException();
+        }
+    }
+}
